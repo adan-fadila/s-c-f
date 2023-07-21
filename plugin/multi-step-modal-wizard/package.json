@@ -1,0 +1,79 @@
+{
+  "name": "multistep.js",
+  "dist-tags": {
+    "latest": "0.1.0"
+  },
+  "version": "0.1.0",
+  "description": "",
+  "main": "MultiStep.min.js",
+  "files": [
+    "dist/**"
+  ],
+  "license": "MIT",
+  "author": {
+    "email": "kinle.greshka.work@gmail.com",
+    "name": "Kinle A G"
+  },
+  "repository": {
+    "url": "https://github.com/Kinle/MultiStep.js",
+    "type": "git"
+  },
+  "homepage": "https://github.com/Kinle/MultiStep.js",
+  "bugs": {
+    "url": "https://github.com/Kinle/MultiStep.js/issues"
+  },
+  "scripts": {
+    "test": "jest -u",
+    "lint": "eslint src --fix",
+    "verify": "yarn lint && yarn test",
+    "build:prod": "cross-env NODE_ENV=production webpack",
+    "build": "webpack",
+    "start": "webpack serve",
+    "deploy": "yarn verify && yarn build-prod && firebase deploy",
+    "analyze": "yarn analyze-profile && yarn analyze-bundle",
+    "analyze-profile": "cross-env NODE_ENV=production webpack --profile --json > stats.json",
+    "analyze-bundle": "webpack-bundle-analyzer stats.json"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.13.8",
+    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
+    "@babel/preset-env": "^7.14.0",
+    "@types/jest": "^26.0.23",
+    "@types/node-sass": "^4.11.1",
+    "autoprefixer": "^10.2.5",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.4",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-prettier": "^3.4.0",
+    "global": "^4.4.0",
+    "handlebars": "^4.7.7",
+    "handlebars-loader": "^1.7.1",
+    "html-webpack-plugin": "^5.3.1",
+    "husky": "^6.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.3",
+    "mini-css-extract-plugin": "^1.5.1",
+    "node-sass": "^5.0.0",
+    "npmrc": "^1.1.1",
+    "postcss": "^8.2.13",
+    "postcss-loader": "^5.2.0",
+    "prettier": "^2.2.1",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "terser-webpack-plugin": "^5.1.1",
+    "ts-loader": "^9.1.1",
+    "typescript": "^4.2.4",
+    "webpack": "^5.36.1",
+    "webpack-bundle-analyzer": "^4.4.1",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  }
+}

@@ -1,0 +1,157 @@
+.fa-circle-plus {
+    font-size: 100px;
+}
+
+.patient-details {
+    background-color: #9bc3f1;
+    width: fit-content;
+    height: fit-content;
+}
+
+.tables {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.request-details {
+    background-color: #9bc3f1;
+    width: fit-content;
+    height: fit-content;
+}
+
+.open-lightbox {
+    width: fit-content;
+}
+
+.open-lightbox:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #565856;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    width: 90%;
+    width: 1200px;
+    height: fit-content;
+}
+
+.close {
+    color: rgb(0, 0, 0);
+    position: sticky;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+    left: 50px;
+}
+
+.add-btn:hover {
+    cursor: grab;
+}
+
+input {
+    padding: 8px 10px;
+    background: #f8f5f5;
+    border: none;
+    width: 50%;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+input :focus {
+    outline: 1px solid #efefef;
+}
+
+.delete {
+    display: flex;
+    background-color: #f44336;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.add {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    background-color: #565856;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    float: right;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.b-bord {
+    border-bottom: 3px solid #c4b0e9;
+    width: fit-content;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.t {
+    display: flex;
+    margin-top: 15px;
+    gap: 5px;
+}
+
+.treat {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.plan {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 30px;
+    padding: 40px;
+}
+
+.upper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#submit {
+    float: right;
+    width: 60x;
+}

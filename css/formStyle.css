@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+}
+
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 70%;
+    /* min-width: 300px; */
+}
+
+h1 {
+    text-align: center;
+}
+
+.not-check-input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    /* border: 1px solid #aaaaaa; */
+    /* border-radius: 20px; */
+    width: 70%;
+}
+
+.form-select {
+    width: 50%;
+}
+
+input,
+textarea,
+select {
+    background-color: #f1f1f1;
+    /* border-radius: 20px ; */
+    text-align: center;
+    margin-left: 20px;
+}
+
+.work-day {
+    margin-top: 90px;
+}
+
+textarea {
+    text-align: left;
+}
+
+
+/* Mark input boxes that gets an error on validation: */
+
+input.invalid {
+    background-color: #ffdddd;
+}
+
+.HW {
+    width: 85px;
+    height: 30px;
+    border: 1px solid #aaaaaa;
+    margin-left: 30px;
+}
+
+.veg {
+    display: flex;
+    gap: 30px;
+}
+
+.radio-opt {
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+
+.opt {
+    display: flex;
+    padding-left: 0;
+    width: auto;
+    gap: 10px;
+}
+
+.medical-data {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.medical-data-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.diagnosis {
+    display: flex;
+    flex-direction: column;
+    gap: 20x;
+}
+
+.diagnosis-select {
+    margin-top: 30px;
+}
+
+.divmethod {
+    margin-top: 40px;
+}
+
+.multiselect-dropdown {
+    min-width: 450px;
+}
+
+.send-medical-info {
+    width: 80%;
+    display: flex;
+    margin-top: 90px;
+    font-weight: 700;
+}
+
+.personal-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 100px;
+    margin-top: 25px;
+    margin-left: 100px;
+}
+
+
+/* Hide all steps by default: */
+
+.tab {
+    display: none;
+    font-size: x-large;
+    height: 450px;
+}
+
+.form-btn {
+    overflow: auto;
+}
+
+button {
+    background-color: #04AA6D;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+}
+
+.last-step {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-n-p {
+    margin-top: 50px;
+    position: sticky;
+}
+
+#nextBtn {
+    float: right;
+    border-radius: 20px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#prevBtn {
+    background-color: #bbbbbb;
+    border-radius: 20px;
+}
+
+.steper {
+    text-align: center;
+    margin-top: 40px;
+}
+
+
+/* Make circles that indicate the steps of the form: */
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+
+/* Mark the steps that are finished and valid: */
+
+.step.finish {
+    background-color: #04AA6D;
+}
+
+@media only screen and (max-width: 800px) {
+    .personal-info {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 0;
+        margin-top: 25px;
+        width: 100%;
+        font-size: x-large;
+    }
+    .diagnosis {
+        display: flex;
+        flex-direction: column;
+        gap: 180px;
+        margin-left: 0;
+        width: 100%;
+        font-size: x-large;
+    }
+    .send-medical-info {
+        width: 100%;
+    }
+    .tab {
+        height: 100%;
+        width: 100%;
+    }
+    .medical-data {
+        display: flex;
+        flex-direction: column;
+        gap: 130px;
+        margin-left: 0;
+        margin-top: 25px;
+        width: 100%;
+        font-size: x-large;
+    }
+    .aside-img {
+        position: absolute;
+        display: none;
+    }
+    .last-step {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 30%;
+        font-size: x-large;
+    }
+    .text {
+        display: flex;
+    }
+    #regForm {
+        padding: auto;
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media only screen and ((min-width: 800px) and (max-width: 1250px)) {
+    .personal-info {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-left: 0;
+        margin-top: 25px;
+        width: 100%;
+        font-size: x-large;
+    }
+    .diagnosis {
+        display: flex;
+        flex-direction: column;
+        gap: 180px;
+        margin-left: 0;
+        width: 100%;
+        font-size: x-large;
+    }
+    .send-medical-info {
+        width: 100%;
+    }
+    .tab {
+        height: 100%;
+    }
+    .medical-data {
+        display: flex;
+        flex-direction: column;
+        gap: 160px;
+        margin-left: 0;
+        margin-top: 25px;
+        width: 100%;
+        font-size: x-large;
+    }
+    .last-step {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 30%;
+        font-size: x-large;
+    }
+    .text {
+        display: flex;
+    }
+}
